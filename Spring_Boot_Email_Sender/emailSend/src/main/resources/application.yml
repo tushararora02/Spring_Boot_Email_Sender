@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: emailSend
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: email@gmail.com
+    password: xxxx xxxx xxxx xxxx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8900
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    url: /openapi
+    configUrl: /openapi/swagger-config
+  api-docs:
+    path: /openapi
+
